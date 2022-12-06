@@ -1,0 +1,21 @@
+.user h2 {
+  margin: 1rem 0;
+}
+.user .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+.user .form input {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 2px solid var(--color-primary-veriant);
+  resize: none;
+  color: var(--color-white);
+}
+.user p {
+  margin: 10px 0;
+}

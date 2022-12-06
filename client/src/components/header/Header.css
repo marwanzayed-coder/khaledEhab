@@ -1,0 +1,89 @@
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+header h3 {
+  color: var(--color-primary);
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-top: -160px;
+}
+header h1 {
+  letter-spacing: 2px;
+}
+header h5 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+header p {
+  font-size: 17px;
+}
+header .social {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 3rem;
+  bottom: 6rem;
+}
+header .social a {
+  display: block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.6rem;
+  border-radius: 50%;
+  display: flex;
+  font-size: 0.8rem;
+  transition: var(--transition);
+  border: 2px solid var(--color-primary);
+}
+header .social a:hover {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+header .social::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background-color: var(--color-primary);
+}
+header .container > a {
+  display: block;
+  position: absolute;
+  bottom: 8.6rem;
+  left: 0;
+  right: 0;
+}
+header .container > a .mouse {
+  width: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  height: 50px;
+  border: 2px solid var(--color-white);
+}
+header .container > a .dot {
+  border: 3px solid var(--color-white);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  transition: var(--transition);
+  animation: topBottom 1s infinite linear alternate;
+}
+@keyframes topBottom {
+  from {
+    transform: translate(-50%, 0);
+  }
+  to {
+    transform: translate(-50%, 20px);
+  }
+}
