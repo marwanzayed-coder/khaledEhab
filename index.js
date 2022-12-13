@@ -29,7 +29,7 @@ app.use(limiter);
 const connectToDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://khaledEhab:khaledEhabPass@cluster0.4dwnwrr.mongodb.net/?retryWrites=true&w=majority"
+      process.env.MONGODB_URL 
     );
   } catch (err) {
     console.log(err);
